@@ -100,10 +100,34 @@ section h3 {
 .participant-item {
   background: linear-gradient(180deg, #eef3ff, #e6eeff);
   color: #1a237e;
-  padding: 6px 10px;
+  padding: 6px 8px;
   border-radius: 999px;
   font-size: 14px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-name {
+  display: inline-block;
+}
+
+.participant-delete {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.participant-delete:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* Fallback text when no participants are present */
